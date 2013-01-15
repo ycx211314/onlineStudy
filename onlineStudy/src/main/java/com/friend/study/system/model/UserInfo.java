@@ -1,4 +1,4 @@
-package com.friend.study.model;
+package com.friend.study.system.model;
 
 import java.io.Serializable;
 
