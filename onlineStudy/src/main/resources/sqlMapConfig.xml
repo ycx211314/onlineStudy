@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 使用spring之后，数据源的配置移植到了spring上，所以iBATIS本身的配置可以取消 -->
+    <mappers>
+        <mapper resource="mappers/UserInfo.xml"/>
+    </mappers>
+</configuration>

@@ -11,4 +11,21 @@ import java.io.Serializable;
  */
 public class UserInfo implements Serializable {
     private Integer userId;
+    private String neckName;
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public String getNeckName() {
+        return neckName;
+    }
+
+    public void setNeckName(String neckName) {
+        this.neckName = neckName;
+    }
 }
