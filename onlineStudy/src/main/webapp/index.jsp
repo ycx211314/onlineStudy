@@ -13,7 +13,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href ="<%=basePath%>">
-    <title>欢迎使用</title>
+    <title>欢迎使用qwe</title>
   </head>
   <body>
   </body>
