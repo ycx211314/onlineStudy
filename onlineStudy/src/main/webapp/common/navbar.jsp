@@ -11,8 +11,8 @@
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     你好，欢迎来到怪蜀黍爱学习！
-                    <a href="#" class="navbar-link">【注册】</a>
-                    <a href="#" class="navbar-link">【登录】</a>
+                    <a href="regist.jsp" class="navbar-link">【注册】</a>
+                    <a href="login.jsp" class="navbar-link">【登录】</a>
                 </p>
                 <ul class="nav nav-pills">
                     <li class="active"><a href="#">我的主页</a></li>
@@ -29,8 +29,8 @@
                             <li><a href="#">课程选择</a></li>
                         </ul>
                     </li>
-                    <li><a href="#about">关于我们</a></li>
-                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="about.jsp">关于我们</a></li>
+                    <li><a href="contact.jsp">联系我们</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

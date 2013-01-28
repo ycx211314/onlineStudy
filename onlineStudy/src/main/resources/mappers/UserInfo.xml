@@ -5,13 +5,17 @@
     <resultMap id="userinf" type="com.friend.study.system.model.UserInfo">
         <id column="uid" javaType="Integer" property="userId"></id>
         <result column="neckname" property="neckName" javaType="String"></result>
+        <result column="lastlogints" property="lastloginTs" javaType="java.util.Date"></result>
+        <result column="logincookies" property="loginCookies" javaType="String"></result>
     </resultMap>
     <cache/>
-    <insert id="saveUser" parameterType="com.friend.study.system.model.UserInfo">
-        insert into T_UserInfo
-            values(#userId,#neckName)
+    <!-- 注册用户 -->
+    <insert id="regist" parameterType="com.friend.study.system.model.UserInfo">
+        INSERT INTO t_userinfo(email, username, passwords, neckname) VALUES(#{email},#{userName},#{password},#{neckName})
     </insert>
-
+    <select id="login" resultMap="userinf">
+        SELECT userid,neckname,lastlogints,logincookies FROM T_USERINFO WHERE (USERNAME= #{userName} OR EMAIL= #{userName}) AND PASSWORDS = #{password}
+    </select>
     <select id="selectUser" resultMap="userinf">
         select * from T_USERINFO
     </select>

@@ -2,78 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/third/renren-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/third/renren-like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/third/renren-link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/third/renren-login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/third/weibo-login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/com/friend/study/systemtest/UserInfoDAOImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/code.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/init_db/init.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/common/navbar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineStudy_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_9_2_1002_jdbc4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/public.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/regist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" />
-      <change type="DELETED" beforePath="I:\Git\Java\onlineStudy\onlineStudy\.idea\libraries\Maven__org_apache_ibatis_ibatis_core_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="I:\Git\Java\onlineStudy\onlineStudy\.idea\runConfigurations\Tomcat_6_0.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/base/interfaces/IDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/service/IRegistService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_2_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/service/impl/RegistServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/controller/RegisterAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/study/system/dao/TestUserInfoDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/application.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/pages/usercenter/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/plug-in/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/plug-in/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineStudy_ear_exploded.xml" />
+      <change type="DELETED" beforePath="I:\Git\Java\onlineStudy\onlineStudy\.idea\libraries\postgresql_9_2_1002_jdbc4.xml" afterPath="" />
+      <change type="DELETED" beforePath="I:\Git\Java\onlineStudy\onlineStudy\src\main\test\com\friend\study\systemtest\UserInfoDAOImplTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/friend/study/system/model/UserInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/model/UserInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-datasource.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-datasource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/images/code.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/code.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init_db/init.sql" afterPath="$PROJECT_DIR$/init_db/init.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/common/navbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/common/navbar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onlineStudy.iml" afterPath="$PROJECT_DIR$/onlineStudy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/onlineStudy_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/onlineStudy_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/public.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/public.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/regist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/regist.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="I:\Git\Java\onlineStudy\onlineStudy\src\main\resources\application-datasource.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
     </list>
     <ignored path="onlineStudy.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358858454859" ignored="false" />
-    <file path="/UserInfo.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358692773844" ignored="false" />
-    <file path="/pom.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358694050490" ignored="false" />
+    <file path="/Dummy.txt" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359375072772" ignored="false" />
+    <file path="/UserInfo.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358948348367" ignored="false" />
+    <file path="/pom.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359377691891" ignored="false" />
     <file path="/a.txt" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358230948406" ignored="false" />
     <file path="/settings.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358232484984" ignored="false" />
     <file path="/EL Fragment (application-datasource.xml:292).jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358240303609" ignored="false" />
-    <file path="/application-datasource.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358755366296" ignored="false" />
-    <file path="/web.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358240643546" ignored="false" />
+    <file path="/application-datasource.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359335707265" ignored="false" />
+    <file path="/web.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359344740171" ignored="false" />
     <file path="/config.properties" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358673769882" ignored="false" />
     <file path="/sqlMapConfig.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358755723125" ignored="false" />
-    <file path="/init.sql" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358676508655" ignored="false" />
+    <file path="/init.sql" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358931163187" ignored="false" />
     <file path="/User.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358676806005" ignored="false" />
     <file path="/IUserDAO.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358677308851" ignored="false" />
-    <file path="/UserInfoDAOImpl.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358754760437" ignored="false" />
-    <file path="/fragment.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358824052914" ignored="false" />
-    <file path="/UserInfo.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358755858281" ignored="false" />
+    <file path="/UserInfoDAOImpl.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359379304308" ignored="false" />
+    <file path="/fragment.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359343999359" ignored="false" />
+    <file path="/UserInfo.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359378378592" ignored="false" />
     <file path="/UserInfoDAOImplTest.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358755137203" ignored="false" />
-    <file path="/IUserInfoDAO.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358754640375" ignored="false" />
+    <file path="/IUserInfoDAO.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359375550601" ignored="false" />
     <file path="/Jsp File.txt.ft" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358844075711" ignored="false" />
     <file path="/index2.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358759946625" ignored="false" />
-    <file path="/index.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358843584242" ignored="false" />
-    <file path="/regist.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358843286867" ignored="false" />
+    <file path="/index.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359345001531" ignored="false" />
+    <file path="/regist.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359294833186" ignored="false" />
     <file path="/bootstrap.css" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358840802524" ignored="false" />
-    <file path="/navbar.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358842477399" ignored="false" />
+    <file path="/navbar.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359345131171" ignored="false" />
+    <file path="/common.js" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358916938843" ignored="false" />
+    <file path="/IDAO.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358922925390" ignored="false" />
+    <file path="/Page.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358922804937" ignored="false" />
+    <file path="/TestUserInfoDAO.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359344300281" ignored="false" />
+    <file path="/fragment.js2" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1358948577451" ignored="false" />
+    <file path="/RegisterAction.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359378796340" ignored="false" />
+    <file path="/Spring-mvc-servlet.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359343164484" ignored="false" />
+    <file path="/RegAction.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359086545890" ignored="false" />
+    <file path="/log4j.properties" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359379075863" ignored="false" />
+    <file path="/IRegistSercie.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359295031358" ignored="false" />
+    <file path="/RegistServiceImpl.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359378764648" ignored="false" />
+    <file path="/login.jsp" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359378563409" ignored="false" />
+    <file path="/applicationContext.xml" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359343174203" ignored="false" />
+    <file path="/IRegistService.java" changelist="6b4d8f72-5b1d-4916-8c25-bae227ba9b91" time="1359378726833" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +106,23 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/test/study/system/dao/TestUserInfoDAO.java" line="29" class="study.system.dao.TestUserInfoDAO" package="study.system.dao">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -150,37 +170,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="RegisterAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/controller/RegisterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="44" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="46" column="32" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regist.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/regist.jsp">
+      <file leaf-file-name="IRegistService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/service/IRegistService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="12" selection-start="55" selection-end="55" vertical-scroll-proportion="0.065743946">
+            <state line="27" column="22" selection-start="554" selection-end="559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/navbar.jsp">
+      <file leaf-file-name="RegistServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/service/impl/RegistServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="26" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+            <state line="36" column="51" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfoDAOImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserInfoDAOImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+            <state line="62" column="60" selection-start="1712" selection-end="1712" vertical-scroll-proportion="1.0504732">
+              <folding>
+                <element signature="e#1384#1400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="144" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="121" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1359379334313" expanded="true" signature="732:845" placeholder="INSERT INTO ..." />
+                <marker date="1359379334313" expanded="true" signature="912:1055" placeholder="SELECT useri..T_USERINFO..." />
+                <marker date="1359379334313" expanded="true" signature="1127:1151" placeholder="select * fro..T_USERINFO..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserInfoDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,16 +242,16 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
+            <state line="76" column="56" selection-start="2969" selection-end="2969" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="public.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/public.css">
+      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="63" column="74" selection-start="2819" selection-end="2819" vertical-scroll-proportion="-8.821428">
               <folding />
             </state>
           </provider>
@@ -219,27 +272,41 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="expandStates">
+      <map>
+        <entry key="onlineStudy" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/model/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfo.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-datasource.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/friend/study/systemtest/UserInfoDAOImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index2.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/Spring-mvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/test/study/system/dao/TestUserInfoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/usercenter/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/navbar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/images/code.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/regist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/service/IRegistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/service/impl/RegistServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/friend/study/system/controller/RegisterAction.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -257,6 +324,16 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
@@ -623,6 +700,11 @@
             <id>toString() issues</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -644,6 +726,9 @@
   <component name="ProjectStructureProblems">
     <ignored-problems>
       <problem id="invalid-module-dependency(module:onlineStudy,Maven: org.springframework:spring-core:3.2.0.RELEASE)" />
+      <problem id="invalid-module-dependency(module:onlineStudy,Tomcat 6.0)" />
+      <problem id="invalid-module-dependency(module:onlineStudy,Tomcat 7)" />
+      <problem id="library-invalid-classes-path(library:project:Maven: postgresql:postgresql:9.2-1002.jdbc)" />
     </ignored-problems>
   </component>
   <component name="ProjectView">
@@ -659,6 +744,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -677,50 +764,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlineStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onlineStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/test" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.side.proportion" value="0.16666667" />
+    <property name="options.lastSelected" value="reference.settings.project.maven.repository.indices" />
+    <property name="last_opened_file_path" value="I:/JDBC/postgresql-9.2-1002.jdbc4.jar!/" />
+    <property name="project.structure.side.proportion" value="0.13869464" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -732,38 +800,38 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\images" />
-      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\images\third" />
-      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\js" />
-      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\js\bootstrap" />
-      <recent name="F:\Git\onlineStudy\onlineStudy\src\main\resources" />
+      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp" />
+      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\resources" />
+      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\js\bootstrap\plug-in" />
+      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\js\bootstrap\css" />
+      <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\webapp\static\js\bootstrap\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="I:\Git\Java\onlineStudy\onlineStudy\src\main\resources\mappers" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 6.0">
-    <configuration default="false" name="UserInfoDAOImplTest" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="TestUserInfoDAO.insert" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.friend.study.systemtest.*" />
+          <option name="PATTERN" value="study.system.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="onlineStudy" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.friend.study.systemtest" />
-      <option name="MAIN_CLASS_NAME" value="com.friend.study.systemtest.UserInfoDAOImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="study.system.dao" />
+      <option name="MAIN_CLASS_NAME" value="study.system.dao.TestUserInfoDAO" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="wholeProject" />
       </option>
       <envs />
       <patterns />
@@ -808,17 +876,17 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -849,6 +917,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -875,28 +956,27 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="study.system" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
+        <value defaultName="wholeProject" />
       </option>
       <envs />
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
-      <deployment />
-      <server-settings />
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -914,13 +994,43 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="false" name="Tomcat 6.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0">
+    <configuration default="false" name="daoTest" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="onlineStudy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="study.system.dao" />
+      <option name="MAIN_CLASS_NAME" value="study.system.dao.TestUserInfoDAO" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tomcat 6.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
@@ -932,14 +1042,13 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_6_0_onlineStudy_2" />
-        <option name="HTTP_PORT" value="8080" />
         <option name="JNDI_PORT" value="8099" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="4635" />
+        <option name="DEBUG_PORT" value="3785" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -995,13 +1104,14 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 6.0" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserInfoDAOImplTest" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.daoTest" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 6.0" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestUserInfoDAO.insert" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserInfoDAOImplTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestUserInfoDAO.insert" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1042,10 +1152,14 @@
       <created>1358239958515</created>
       <updated>1358239958515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基本运行">
+      <created>1358859565312</created>
+      <updated>1358859565312</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1070,31 +1184,31 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.6093489" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.624374" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39065108" sideWeight="0.61742425" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37221268" sideWeight="0.7681818" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3897436" sideWeight="0.37727273" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24469697" sideWeight="0.46744573" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3739566" sideWeight="0.22651514" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.32418525" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.4969697" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24469697" sideWeight="0.38230383" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24469697" sideWeight="0.21797004" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32220367" sideWeight="0.47575757" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.6226415" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.34133792" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6740995" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.4969697" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2931818" sideWeight="0.61025643" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.4939394" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24772727" sideWeight="0.6277873" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.360601" sideWeight="0.7090909" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25378788" sideWeight="0.34991422" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.4878788" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1136,7 +1250,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the first class" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本运行" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1150,159 +1264,146 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="create the first class" />
+    <MESSAGE value="基本运行" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/public.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/regist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="62" column="129" selection-start="2535" selection-end="2569" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{&quot;debug&quot;: true...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+            <marker date="1359294842102" expanded="false" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/usercenter/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="80" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/com.friend.study.system.model.UserInfo">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.friend.study.system.model.UserInfo</OriginalElement>
-          <nodes>
-            <node x="" y="">com.friend.study.system.model.UserInfo</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="71.0" y="75.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">classes</node>
-            <node x="" y="">com</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">org</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">COM</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">sunw</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">java</node>
-            <node x="" y="">mappers</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9159420289855073" x="182.0" y="128.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/model/UserInfo.java">
+    <entry file="jar://D:/DEV/JDK/src.zip!/java/net/DualStackPlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="91" selection-start="277" selection-end="277" vertical-scroll-proportion="-0.46153846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="265" column="105" selection-start="7504" selection-end="7504" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#7909#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="310" selection-end="310" vertical-scroll-proportion="0.060126584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap-responsive.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/img/glyphicons-halflings-white.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1447" column="44" selection-start="40140" selection-end="40152" vertical-scroll-proportion="0.3309091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4711" column="52" selection-start="90825" selection-end="90825" vertical-scroll-proportion="-1.5723077">
+        <state line="76" column="56" selection-start="2969" selection-end="2969" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/common/navbar.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+        <state line="17" column="64" selection-start="909" selection-end="909" vertical-scroll-proportion="0.065743946">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/images/code.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/model/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="21" selection-start="2054" selection-end="2054" vertical-scroll-proportion="0.61616164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+        <state line="43" column="31" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/regist.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="55" selection-end="55" vertical-scroll-proportion="0.065743946">
+        <state line="40" column="49" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="74" selection-start="2819" selection-end="2819" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/service/IRegistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="22" selection-start="554" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/service/impl/RegistServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="51" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="144" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DEV/JDK/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="721" column="0" selection-start="26865" selection-end="26865" vertical-scroll-proportion="0.33123028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserInfo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="121" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1359379334313" expanded="true" signature="732:845" placeholder="INSERT INTO ..." />
+            <marker date="1359379334313" expanded="true" signature="912:1055" placeholder="SELECT useri..T_USERINFO..." />
+            <marker date="1359379334313" expanded="true" signature="1127:1151" placeholder="select * fro..T_USERINFO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/IUserInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/controller/RegisterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="32" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/friend/study/system/dao/impl/UserInfoDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="60" selection-start="1712" selection-end="1712" vertical-scroll-proportion="1.0504732">
+          <folding>
+            <element signature="e#1384#1400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,8 +1414,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="jpa-descriptors" />
               <type id="library" />
               <type id="javaee-facet-resources" />
             </show-content>
@@ -1323,7 +1424,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16666667" />
+                <option value="0.13869464" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1336,7 +1437,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16666667" />
+                <option value="0.13869464" />
               </list>
             </option>
           </splitter-proportions>
@@ -1356,11 +1457,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>JAVA1.7</last-edited>
+          <last-edited>Python 2.7.3 (D:/DEV/PYTHON27/python.exe)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16666667" />
+                <option value="0.13869464" />
               </list>
             </option>
           </splitter-proportions>
@@ -1372,7 +1473,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16666667" />
+                <option value="0.13869464" />
               </list>
             </option>
           </splitter-proportions>
@@ -1392,11 +1493,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.springframework:spring-jdbc:3.2.0.RELEASE</last-edited>
+          <last-edited>Maven: org.springframework:spring-webmvc:3.2.0.RELEASE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.16666667" />
+                <option value="0.13869464" />
               </list>
             </option>
           </splitter-proportions>

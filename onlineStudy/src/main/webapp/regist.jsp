@@ -5,6 +5,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" import="java.util.*,java.lang.*" pageEncoding="UTF-8" %>
+<%@ taglib prefix="mvc" uri="http://www.springframework.org/tags/form" %>
 <%
     String basePath = String.format("%s://%s:%s%s/", request.getScheme(), request.getServerName(), request.getServerPort(), request.getContextPath());
 %>
@@ -14,28 +15,35 @@
     <link rel="stylesheet" href="static/js/bootstrap/css/bootstrap.css"/>
     <script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap/js/bootstrap.js"></script>
-    <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-            min-width: 900px;
-        }
-        .sidebar-nav {
-            padding: 9px 0;
-        }
-        .protrols {
-            height: 200px;
-            background-color: #ffffff;
-            overflow-y: scroll;
-        }
-
-        .line {
-            width: 2px;
-            background: linear-gradient(#FFFFFF, #CCCCCC, #CCCCCC, #FFFFFF) repeat scroll 0 0 transparent;
-            height: 200px;
-            margin: 0px auto;
-        }
-    </style>
+    <script type="text/javascript" src="static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
+    <link rel="stylesheet" href="static/public.css"/>
+    <script type="text/javascript">
+        $(function(){
+            importValidate();
+            $('#registForm').validate({
+                debug:true,
+                rules: {
+                    "bean.email": {email: true,required: true},
+                    "bean.userName":{required:true,minlength:6},
+                    "bean.neckname":{required:true},
+                    "bean.password":{required:true,minlength:6},
+                    "repPwd":{required:true,equalTo:"#password"},
+                    "validateCode":{required:true}
+                },
+                submitHandler:function(form){
+                    form.submit();
+                }
+            });
+            $("#protols").bind("change",function(){
+                if(document.getElementById("protols").checked){
+                    document.getElementById("submitBtn").disabled=false;
+                }else{
+                    document.getElementById("submitBtn").disabled=true;
+                }
+            })
+        })
+    </script>
     <title>欢迎注册</title>
 </head>
 <body>
@@ -52,55 +60,49 @@
             </div>
             <div class="row-fluid">
                 <div class="span6">
-                    <form class="form-horizontal" id="registForm">
+                    <mvc:form id="registForm" modelAttribute="bean" commandName="bean" action="${pageContext.request.contextPath}/register.do" method="post" cssClass="form-horizontal">
+                    <%--<form class="form-horizontal" id="registForm" method="post" action="${pageContext.request.contextPath}/register.do">--%>
                         <div class="control-group">
                             <label class="control-label">邮　　箱：</label>
-
                             <div class="controls">
-                                <input class="input-medium" type="email" placeholder="请输入注册邮箱">
-                                <span class="help-inline">邮箱格式错误</span>
+                                <input class="input-medium" name="email" type="email" placeholder="请输入注册邮箱" required>
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">用户名称：</label>
-
                             <div class="controls">
-                                <input class="input-medium" type="text" placeholder="你的登录名">
-                                <span class="help-inline">邮箱格式错误</span>
+                                <input class="input-medium" name="userName" type="text" placeholder="你的登录名">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">你的昵称：</label>
 
                             <div class="controls">
-                                <input class="input-medium" type="text" placeholder="你的昵称">
-                                <span class="help-inline">邮箱格式错误</span>
+                                <input class="input-medium" name="neckName" type="text" placeholder="你的昵称">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">密　　码：</label>
-
                             <div class="controls">
-                                <input class="input-medium" type="password" placeholder="请输入用户名">
-                                <span class="help-inline">密码过短</span>
+                                <input class="input-medium" name="password" id="password" type="password" placeholder="请输入用户名">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">重复密码：</label>
                             <div class="controls">
-                                <input class="input-medium" type="password" placeholder="请输入用户名">
-                                <span class="help-inline">密码过短</span>
+                                <input class="input-medium" id="repPwd" name="repPwd" type="password" placeholder="请输入用户名">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">验证字符：</label>
                             <div class="controls">
-                                <input class="input-small" type="text" placeholder="请输入图片中的字符">
+                                <input class="input-small" type="text" name="validateCode" placeholder="请输入图片中的字符">
                                 <img src="static/images/code.jsp"/>
                                 <a href="#">看不清</a>
                             </div>
                         </div>
-                    </form>
+                    <%--</form>--%>
+                    </mvc:form>
                 </div>
                 <div class="span1">
                     <div class="line"></div>
@@ -299,7 +301,7 @@
 
                     </div>
                     <label class="checkbox">
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="1" name="protols" id="protols" form="registForm">
                         我已同意上述协议
                     </label>
                 </div>
@@ -307,8 +309,8 @@
             <div class="row">
                 <div class="span12">
                     <div class="span4 offset4">
-                    <button class="btn btn-primary" type="submit"form="registForm"><i class="icon-star"></i>注册</button>
-                    <button class="btn btn-primary" type="reset" form="registForm"><i class="icon-star-empty"></i>重置</button>
+                    <input class="btn btn-primary" type="submit" id="submitBtn" form="registForm" value="注册"disabled />
+                    <input class="btn btn-primary" type="reset" form="registForm" value="重置"/>
                     </div>
                 </div>
             </div>
