@@ -26,21 +26,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div class="jumbotron masthead">
       <div class="container">
           如何联系我们
-          <ul class="masthead-links">
-              <li>
-                  <a href="regist.jsp" >注册账号</a>
-              </li>
-              <li>
-                  <a href="login.jsp" >现在登录</a>
-              </li>
-              <li>
-                  <a href="#" >关于合作</a>
-              </li>
-              <li>
-                 怪蜀黍 &copy 2012-2013
-              </li>
-          </ul>
+
       </div>
   </div>
+  <%@include file="common/footer.jsp"%>
   </body>
 </html>

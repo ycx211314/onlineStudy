@@ -47,8 +47,8 @@
     <title>欢迎注册</title>
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-<div>
     <%@include file="common/navbar.jsp"%>
+    <div class="mainContent container-fluid">
     <div class="container">
         <div class="container-fluid well">
             <div class="row-fluid">
@@ -316,6 +316,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+    <%@include file="common/footer.jsp"%>
 </body>
 </html>

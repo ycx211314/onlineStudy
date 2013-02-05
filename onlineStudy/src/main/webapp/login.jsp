@@ -17,18 +17,18 @@
     <script type="text/javascript" src="static/js/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
     <script type="text/javascript" src="static/js/common.js"></script>
-    <link rel="stylesheet" href="static/public.css"/>
+    <link rel="stylesheet" href="static/docs.css"/>
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             importValidate();
             $('#loginForm').validate({
-                debug:true,
+                debug: true,
                 rules: {
-                    "userName":{required:true,minlength:6},
-                    "password":{required:true,minlength:6},
-                    "validateCode":{required:true}
+                    "userName": {required: true, minlength: 6},
+                    "password": {required: true, minlength: 6},
+                    "validateCode": {required: true}
                 },
-                submitHandler:function(form){
+                submitHandler: function (form) {
                     form.submit();
                 }
             });
@@ -37,9 +37,8 @@
     <title>登陆</title>
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-<div>
-    <%@include file="common/navbar.jsp"%>
-    <div class="jumbotron masthead">
+    <%@include file="common/navbar.jsp" %>
+    <div class="mainContent container-fluid">
     <div class="container">
         <div class="container-fluid well">
             <div class="row-fluid">
@@ -51,29 +50,34 @@
             </div>
             <div class="row-fluid">
                 <div class="span6">
-                    <mvc:form id="loginForm" action="${pageContext.request.contextPath}/login.do" method="post" cssClass="form-horizontal">
-                    <%--<form class="form-horizontal" id="registForm" method="post" action="${pageContext.request.contextPath}/register.do">--%>
+                    <mvc:form id="loginForm" action="${pageContext.request.contextPath}/login.do" method="post"
+                              cssClass="form-horizontal">
+                        <%--<form class="form-horizontal" id="registForm" method="post" action="${pageContext.request.contextPath}/register.do">--%>
                         <div class="control-group">
                             <label class="control-label">邮　　箱：</label>
+
                             <div class="controls">
                                 <input class="input-medium" name="username" type="text" placeholder="登录名/用户名" required>
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">密　　码：</label>
+
                             <div class="controls">
-                                <input class="input-medium" name="password" id="password" type="password" placeholder="请输入用户名">
+                                <input class="input-medium" name="password" id="password" type="password"
+                                       placeholder="请输入用户名">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label">验证字符：</label>
+
                             <div class="controls">
                                 <input class="input-small" type="text" name="validateCode" placeholder="请输入图片中的字符">
                                 <img src="static/images/code.jsp"/>
                                 <a href="#">看不清</a>
                             </div>
                         </div>
-                    <%--</form>--%>
+                        <%--</form>--%>
                     </mvc:form>
                 </div>
                 <div class="span6">
@@ -87,14 +91,14 @@
             <div class="row">
                 <div class="span12">
                     <div class="span4 offset4">
-                    <input class="btn btn-primary" type="submit" id="submitBtn" form="loginForm" value="登陆"/>
-                    <input class="btn btn-primary" type="reset" form="loginForm" value="重置"/>
+                        <input class="btn btn-primary" type="submit" id="submitBtn" form="loginForm" value="登陆"/>
+                        <input class="btn btn-primary" type="reset" form="loginForm" value="重置"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     </div>
+    <%@include file="common/footer.jsp"%>
 </body>
 </html>

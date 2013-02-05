@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.UUID;
 
 /**
  * Created with IntelliJ IDEA.
@@ -40,6 +41,7 @@ public class RegistServiceImpl implements IRegistService {
     @Override
     public UserInfo login(String username, String password) throws Exception {
         UserInfo vo = this.mapper.login(username,password,"");
+        vo.setPassword(UUID.randomUUID().toString());
         return vo;
     }
 

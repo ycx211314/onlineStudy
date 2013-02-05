@@ -1,5 +1,6 @@
 package com.friend.study.system.controller;
 
+import com.friend.base.util.SessionKey;
 import com.friend.study.system.model.UserInfo;
 import com.friend.study.system.service.IRegistService;
 import com.friend.study.system.service.impl.RegistServiceImpl;
@@ -14,6 +15,7 @@ import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Created with 杨成锡
@@ -39,10 +41,15 @@ public class RegisterAction{
         return mv;
     }
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public String login(String username,String password,String code)throws Exception{
+    public String login(String username,String password,String code,HttpSession session)throws Exception{
         UserInfo loginer = this.service.login(username,password);
-        loginer.getUserId();
-        return "pages/usercenter/index";
+        session.setAttribute(SessionKey.USER,loginer);
+        return "redirect:index.jsp";
+    }
+    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+    public String logout(HttpSession session)throws Exception{
+        session.removeAttribute(SessionKey.USER);
+        return "redirect:index.jsp";
     }
 
     /**

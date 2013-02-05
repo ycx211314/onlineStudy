@@ -52,14 +52,14 @@ public interface IUserInfoMapper extends IDAO<UserInfo,Integer>{
      * @return 是否登录成功
      * @throws Exception 出错抛出异常
      */
-    @Select("SELECT userid,neckname,lastlogints,logincookies FROM T_USERINFO WHERE (USERNAME= #{userName} OR EMAIL= #{userName}) AND PASSWORDS = #{password}")
-    @Results(value = {
-            @Result(column ="userid",property ="userId"),
-            @Result(column ="neckname",property = "nectName"),
-            @Result(column = "lastlogints",property = "lastloginTs") ,
-            @Result(column = "logincookies",property = "loginCookies")
-    })
-    UserInfo login(String loginName, String loginPwd, String cookies) throws Exception;
+    @Select("SELECT * FROM T_USERINFO WHERE (USERNAME= #{loginName} OR EMAIL= #{loginName}) AND PASSWORDS = #{loginPwd}")
+//    @Results(value = {
+//            @Result(column ="userid",property ="userId"),
+//            @Result(column ="neckname",property = "nectName"),
+//            @Result(column = "lastlogints",property = "lastloginTs") ,
+//            @Result(column = "logincookies",property = "loginCookies")
+//    })
+    UserInfo login(@Param("loginName")String loginName, @Param("loginPwd")String loginPwd, String cookies) throws Exception;
 
     /**
      * 第三方登录
