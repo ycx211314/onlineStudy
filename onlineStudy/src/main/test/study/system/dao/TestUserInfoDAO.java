@@ -1,11 +1,12 @@
 package study.system.dao;
 
-import com.friend.study.system.dao.IUserInfoDAO;
 import com.friend.study.system.model.UserInfo;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,22 +17,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestUserInfoDAO {
     private ApplicationContext context;
-    private IUserInfoDAO dao;
     @Before
     public void init(){
           this.context=new ClassPathXmlApplicationContext("applicationContext.xml");
-        this.dao=this.context.getBean(IUserInfoDAO.class);
     }
     @Test
+    @Transactional(propagation = Propagation.REQUIRED)
     public void insert(){
         UserInfo vo = new UserInfo();
         vo.setNeckName("一堆一堆");
-        vo.setEmail("ycx211314@ds.com");
+        vo.setEmail("ycx211314@dsss.com");
         vo.setPassword("123123");
-        vo.setUserName("ycx211314");
+        vo.setUserName("ycx21fd1314");
         try{
-            int res = dao.insert(vo);
-            assert(res > 0);
+            assert(0 > 0);
         }catch (Exception e){
             e.printStackTrace();
         }

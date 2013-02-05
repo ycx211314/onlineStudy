@@ -26,4 +26,13 @@ public interface IRegistService {
      * @throws Exception
      */
     public UserInfo login(String username,String password)throws Exception;
+
+    /**
+     * 判断用户名，邮箱，是否唯一
+     * @param code 验证值
+     * @param type       类型
+     * @return               存在返回true,不存在返回false
+     * @throws Exception
+     */
+    public boolean isExsit(String code,int type)throws Exception;
 }

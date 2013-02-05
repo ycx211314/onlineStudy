@@ -36,9 +36,10 @@
     </script>
     <title>登陆</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
 <div>
     <%@include file="common/navbar.jsp"%>
+    <div class="jumbotron masthead">
     <div class="container">
         <div class="container-fluid well">
             <div class="row-fluid">
@@ -94,5 +95,6 @@
         </div>
     </div>
 </div>
+    </div>
 </body>
 </html>

@@ -1,9 +1,4 @@
----DROP TABEL UserInfo
-drop sequence seq_userinfo;
-create sequence seq_userinfo increment 1 minvalue 1 cache 10;
-
-
-----------create tables--------
+----------用户
 drop table t_userinfo;
 create table t_userinfo(
   userid integer primary key default nextval('seq_userinfo'),
@@ -17,4 +12,4 @@ create table t_userinfo(
   registDate date default current_date,
   lastloginTs date,
   loginCookies varchar(100)
-)
+);

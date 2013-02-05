@@ -3,7 +3,7 @@ function importValidate(){
         errorElement:"span",
         errorClass:"help-inline",
         highlight:function(el){
-            $(el).closest('.control-group').addClass('error');
+            $(el).closest('.control-group').removeClass("success").addClass('error');
         },
         unhighlight:function(el){
             $(el).closest('.control-group').removeClass("error").addClass('success');

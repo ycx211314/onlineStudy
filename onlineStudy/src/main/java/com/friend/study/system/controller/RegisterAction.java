@@ -3,13 +3,11 @@ package com.friend.study.system.controller;
 import com.friend.study.system.model.UserInfo;
 import com.friend.study.system.service.IRegistService;
 import com.friend.study.system.service.impl.RegistServiceImpl;
+import org.codehaus.jackson.map.util.JSONPObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.HttpRequestHandler;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
@@ -36,15 +34,34 @@ public class RegisterAction{
     public ModelAndView regist(UserInfo bean,@RequestParam("validateCode") String code,String protols)throws Exception{
         ModelAndView mv = new ModelAndView();
         mv.addObject("message", "注册成功");
-        this.service.regist(bean);
-        mv.setViewName("usercenter/index");
+        boolean flag = this.service.regist(bean);
+        mv.setViewName("pages/usercenter/index");
         return mv;
     }
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(String username,String password,String code)throws Exception{
         UserInfo loginer = this.service.login(username,password);
         loginer.getUserId();
-        return "usercenter/index";
+        return "pages/usercenter/index";
+    }
+
+    /**
+     * 判断用户名是否存在
+     * @param email      email
+     * @param  userName        用户名
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/check",produces = "application/json")
+    public @ResponseBody Boolean check(String email,String userName)throws Exception{
+       boolean flag = false;
+
+        if(email != null && email.length() > 0 ){
+            flag = this.service.isExsit(email,1);
+        }else if(userName != null && userName.length() > 0){
+            flag = this.service.isExsit(userName,2);
+        }
+        return !flag;
     }
 
 }

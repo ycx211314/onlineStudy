@@ -1,8 +1,9 @@
 package com.friend.study.system.service.impl;
 
-import com.friend.study.system.dao.IUserInfoDAO;
+import com.friend.study.system.mapper.IUserInfoMapper;
 import com.friend.study.system.model.UserInfo;
 import com.friend.study.system.service.IRegistService;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,15 +20,16 @@ import javax.annotation.Resource;
 @Service
 @Transactional(propagation = Propagation.REQUIRED)
 public class RegistServiceImpl implements IRegistService {
+
+    private IUserInfoMapper mapper;
     @Resource
-    private IUserInfoDAO dao;
-    public void setDao(IUserInfoDAO dao) {
-        this.dao = dao;
+    public void setMapper(SqlSessionTemplate template){
+        mapper = template.getMapper(IUserInfoMapper.class);
     }
 
     @Override
     public boolean regist(UserInfo vo) throws Exception {
-        int res = this.dao.insert(vo);
+        int res = mapper.insert(vo);
         if(res > 0){
             return true;
         }else{
@@ -37,7 +39,28 @@ public class RegistServiceImpl implements IRegistService {
 
     @Override
     public UserInfo login(String username, String password) throws Exception {
-        UserInfo vo = this.dao.login(username,password,"");
+        UserInfo vo = this.mapper.login(username,password,"");
         return vo;
+    }
+
+    @Override
+    public boolean isExsit(String code, int type) throws Exception {
+        boolean flag = false;
+        switch (type){
+            case 1:{
+                if(this.mapper.isExsitEmail(code) > 0){
+                    flag = true;
+                }
+                 break;
+            }
+            case 2:
+                if(this .mapper.isExsitUserName(code) > 0){
+                    flag = true;
+                }
+                break;
+            default:
+                break;
+        }
+        return flag;
     }
 }

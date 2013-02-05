@@ -20,8 +20,15 @@
     <!--Spring3.1开始的注解 HandlerMapping -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/pages/"/>
+        <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
+    </bean>
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
     </bean>
     <context:component-scan base-package="com.friend.*"/>
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -48,8 +55,12 @@
         <property name="dataSource" ref="dataSource"></property>
         <property name="configLocation" value="classpath:sqlMapConfig.xml"></property>
     </bean>
-    <bean class="org.mybatis.spring.SqlSessionTemplate">
+    <bean id="sqlsessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg ref="sqlSessionFactory" index="0"></constructor-arg>
+    </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionTemplate" ref="sqlsessionTemplate"></property>
+        <property name="basePackage" value="com.friend.study.**.mapper"></property>
     </bean>
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"></property>

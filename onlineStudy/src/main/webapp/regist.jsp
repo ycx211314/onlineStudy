@@ -24,10 +24,10 @@
             $('#registForm').validate({
                 debug:true,
                 rules: {
-                    "bean.email": {email: true,required: true},
-                    "bean.userName":{required:true,minlength:6},
-                    "bean.neckname":{required:true},
-                    "bean.password":{required:true,minlength:6},
+                    "email": {email: true,required: true,remote:"${pageContext.request.contextPath}/check.do"},
+                    "userName":{required:true,minlength:6,remote:"${pageContext.request.contextPath}/check.do"},
+                    "neckname":{required:true},
+                    "password":{required:true,minlength:6},
                     "repPwd":{required:true,equalTo:"#password"},
                     "validateCode":{required:true}
                 },
@@ -46,7 +46,7 @@
     </script>
     <title>欢迎注册</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
 <div>
     <%@include file="common/navbar.jsp"%>
     <div class="container">

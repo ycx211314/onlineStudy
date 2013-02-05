@@ -1,0 +1,14 @@
+
+body {
+    min-height: 500px;
+    min-width: 1000px;
+}
+.bg{
+    border: 2px solid #F5F5F5;
+    padding:2px;
+    box-sizing:border-box;
+    border-radius: 5px;
+}
+#mainContent{
+    background-color:#FFF;
+}

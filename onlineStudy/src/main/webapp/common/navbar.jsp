@@ -5,28 +5,28 @@
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
             </a>
             <a class="brand" href="index.jsp">怪蜀黍爱学习</a>
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                     你好，欢迎来到怪蜀黍爱学习！
-                    <a href="regist.jsp" class="navbar-link">【注册】</a>
-                    <a href="login.jsp" class="navbar-link">【登录】</a>
+                    【<a href="regist.jsp" class="navbar-link">注册</a>】
+                    【<a href="login.jsp" class="navbar-link">登录</a>】
                 </p>
                 <ul class="nav nav-pills">
-                    <li class="active"><a href="#">我的主页</a></li>
+                    <li class="active"><a href="index.jsp">首页</a></li>
+                    <li><a href="index.jsp">热门课程</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle"
                            data-toggle="dropdown"
                            href="#">
-                            个人中心
+                            我的进步
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">课程选择</a></li>
-                            <li><a href="#">课程选择</a></li>
-                            <li><a href="#">课程选择</a></li>
+                            <li><a href="#">定制课程</a></li>
+                            <li><a href="#">学习测验</a></li>
+                            <li><a href="#">统计信息</a></li>
                         </ul>
                     </li>
                     <li><a href="about.jsp">关于我们</a></li>
