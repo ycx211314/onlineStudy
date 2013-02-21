@@ -1,0 +1,62 @@
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+#banner{
+	width:100%;
+	height:65px;
+	background-repeat:no-repeat;
+	float:left;
+	}
+#banner .loginInfo{
+	width:300px;
+	height:65px;
+	overflow: hidden;
+	float: right;
+}
+#banner .leftLogo{
+	height:65px;
+	float: left;
+	padding-left: 100px;
+}
+#menuleft{
+	height:100%;
+	float:left;
+	}
+#menuleft button{
+	text-align: center;
+	width: 98%;
+	height:20px;
+	margin-bottom: 5px;
+	}
+#maincontent{
+	width:700px;
+	height:500px;
+	float:left;
+	}
+#footer{
+	width:999px;
+	height:30px;
+	float:left;
+	border: 1px solid #99BBE8;
+	text-align: center;
+	}
+.text{
+	margin: 0 1px; border: 2px solid #E0ECFF;
+}
+.smallsize{
+	font-size: 12px;
+	}
+.button {
+	text-align: center;
+	height:50px;
+	width:100px;
+}
+.datagridImg{
+	width:100px;
+	height:150px;
+}
+.corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;border: 2px solid #E0ECFF; }
+.shorts{width:110px;}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }

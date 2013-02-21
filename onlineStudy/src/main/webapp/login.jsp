@@ -17,7 +17,7 @@
     <script type="text/javascript" src="static/js/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
     <script type="text/javascript" src="static/js/common.js"></script>
-    <link rel="stylesheet" href="static/docs.css"/>
+    <link rel="stylesheet" href="static/public.css"/>
     <script type="text/javascript">
         $(function () {
             importValidate();
@@ -36,9 +36,9 @@
     </script>
     <title>登陆</title>
 </head>
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<body>
     <%@include file="common/navbar.jsp" %>
-    <div class="mainContent container-fluid">
+    <div class="container-fluid">
     <div class="container">
         <div class="container-fluid well">
             <div class="row-fluid">

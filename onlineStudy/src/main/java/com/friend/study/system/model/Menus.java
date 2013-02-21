@@ -26,7 +26,7 @@ public class Menus implements Serializable {
     /**
      * 属性
      */
-    private String attrs;
+    private Integer attrs;
     /**
      * 图标
      */
@@ -74,11 +74,11 @@ public class Menus implements Serializable {
         this.url = url;
     }
 
-    public String getAttrs() {
+    public Integer getAttrs() {
         return attrs;
     }
 
-    public void setAttrs(String attrs) {
+    public void setAttrs(Integer attrs) {
         this.attrs = attrs;
     }
 

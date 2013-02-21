@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="row-fluid">
-                <div class="span6">
+                <div class="span5">
                     <mvc:form id="registForm" modelAttribute="bean" commandName="bean" action="${pageContext.request.contextPath}/register.do" method="post" cssClass="form-horizontal">
                     <%--<form class="form-horizontal" id="registForm" method="post" action="${pageContext.request.contextPath}/register.do">--%>
                         <div class="control-group">
@@ -104,7 +104,7 @@
                     <%--</form>--%>
                     </mvc:form>
                 </div>
-                <div class="span1">
+                <div class="span2" style="margin-left: 0px">
                     <div class="line"></div>
                 </div>
                 <div class="span5">

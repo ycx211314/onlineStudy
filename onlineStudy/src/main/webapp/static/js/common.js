@@ -30,3 +30,11 @@ function importValidate(){
 
     });
 }
+$(function(){
+    $(".headerSelect .active").removeClass("active");
+    $(".headerSelect a").each(function(){
+        if(location.href == (document.baseURI+$(this).attr("href"))){
+            $(this).parent("li").addClass("active")
+        }
+    });
+})

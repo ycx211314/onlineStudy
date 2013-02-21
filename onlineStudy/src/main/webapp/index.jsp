@@ -19,14 +19,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <script type="text/javascript" src="static/js/bootstrap/js/bootstrap.js"></script>
       <script type="text/javascript" src="static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
       <script type="text/javascript" src="static/js/common.js"></script>
-      <link rel="stylesheet" href="static/docs.css"/>
+      <link rel="stylesheet" href="static/public.css"/>
   </head>
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body class="body">
   <%@include file="common/navbar.jsp"%>
-  <div class="jumbotron masthead">
-      <div class="container">
+  <div class="container-fluid whiteFont">
+      <div class="row12">
           <h1>怪蜀黍爱学习</h1>
-          <p>坚持，用心，专业，进取，是成功不可缺少的因素<br>创新，多维，多角度，多思维定制学习</p>
+          <p>坚持，用心，专业，进取，是成功不可缺少的因素<br>
+              创新，多维，多角度，多思维定制学习<br>
+              分散学习要优于集中学习,培养速读的习惯,要重视联想<br></p>
           <p>
               <a href="regist.jsp" class="btn btn-primary btn-large" >开始畅游</a>
           </p>

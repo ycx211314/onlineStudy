@@ -2,6 +2,8 @@ package com.friend.study.system.service;
 
 import com.friend.study.system.model.Menus;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -11,4 +13,8 @@ import com.friend.study.system.model.Menus;
  */
 public interface IMenuService {
     public boolean addMenu(Menus vo)throws Exception;
+
+    public List<Menus> findAll()throws Exception;
+
+    public boolean remove(Integer mid) throws Exception;
 }

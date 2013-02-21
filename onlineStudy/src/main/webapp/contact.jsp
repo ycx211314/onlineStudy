@@ -19,15 +19,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <script type="text/javascript" src="static/js/bootstrap/js/bootstrap.js"></script>
       <script type="text/javascript" src="static/js/bootstrap/plug-in/jquery.validate.min.js"></script>
       <script type="text/javascript" src="static/js/common.js"></script>
-      <link rel="stylesheet" href="static/docs.css"/>
+      <link rel="stylesheet" href="static/public.css"/>
   </head>
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" class="body">
   <%@include file="common/navbar.jsp"%>
-  <div class="jumbotron masthead">
-      <div class="container">
+  <div class="container-fluid">
           如何联系我们
-
-      </div>
   </div>
   <%@include file="common/footer.jsp"%>
   </body>

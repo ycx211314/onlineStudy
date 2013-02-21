@@ -47,7 +47,7 @@ public class AdminServiceImpl implements IAdminService {
     public Map<String, Object> findLoginInfomation(String username) throws Exception {
         Map<String,Object> result = new HashMap<String, Object>();
         Map<String,Object> param = new HashMap<String, Object>();
-        List<Menus> menus = menuMapper.search(10, 0, param);
+        List<Menus> menus = menuMapper.search(param);
         result.put("menu",menus);
         return result;
     }

@@ -2,6 +2,7 @@ package com.friend.study.system.mapper;
 
 import com.friend.base.interfaces.IDAO;
 import com.friend.study.system.model.Menus;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
@@ -28,6 +29,7 @@ public interface IMenuMapper extends IDAO<Menus,Integer> {
     Integer insert(Menus vo) throws Exception;
 
     @Override
+    @Delete("DELETE FROM T_MENU WHERE mid=#{mid}")
     int delete(Map<String, Object> param) throws Exception;
 
     @Override
@@ -39,6 +41,10 @@ public interface IMenuMapper extends IDAO<Menus,Integer> {
     @Override
     @Select("SELECT * FROM T_MENU WHERE 1=1 limit #{pageSize} offset #{offset}")
     List<Menus> search(int pageSize, int offset, Map<String, Object> map) throws Exception;
+
+    @Override
+    @Select("SELECT * FROM T_MENU")
+    List<Menus> search(Map<String, Object> map) throws Exception;
 
     @Override
     int count(Map<String, Object> map) throws Exception;

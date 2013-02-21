@@ -27,18 +27,18 @@
                         </p>
                     </c:otherwise>
                 </c:choose>
-                <ul class="nav nav-pills">
+                <ul class="nav nav-pills headerSelect">
                     <li class="active"><a href="index.jsp">首页</a></li>
-                    <li><a href="index.jsp">热门课程</a></li>
+                    <li><a href="pages/hotcourse.jsp">热门课程</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle"
                            data-toggle="dropdown"
-                           href="#">
-                            我的进步
+                           href="">
+                            个人中心
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">定制课程</a></li>
+                            <li><a href="pages/usercenter/index.jsp">信息统计</a></li>
                             <li><a href="#">学习测验</a></li>
                             <li><a href="#">统计信息</a></li>
                         </ul>

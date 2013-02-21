@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*,java.lang.*" pageEncoding="UTF-8"%>
-<footer class="footer" style="margin-top:0px;">
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="navbar-inner">
     <ul class="masthead-links">
         <li>
             <a href="regist.jsp" >注册账号</a>
@@ -14,4 +15,5 @@
             怪蜀黍 &copy 2012-2013
         </li>
     </ul>
-</footer>
+    </div>
+</div>

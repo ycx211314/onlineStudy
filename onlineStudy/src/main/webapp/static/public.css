@@ -1,7 +1,40 @@
-@import "docs.css";
 body {
     padding-top: 41px;
     min-width: 900px;
+}
+body > .navbar {
+    font-size: 13px;
+}
+
+/* Change the docs' brand */
+body > .navbar .brand {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    float: right;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+body > .navbar .brand:hover {
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .4);
+}
+body >.navbar {
+    font-family: "微软雅黑";
+}
+.masthead-links {
+    margin: 0;
+    list-style: none;
+}
+
+.masthead-links li {
+    display: inline;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .25);
 }
 .sidebar-nav {
     padding: 9px 0;
@@ -11,10 +44,147 @@ body {
     background-color: #ffffff;
     overflow-y: scroll;
 }
-
+.mainBody{
+    height: 100%;
+    min-height: 400px;
+    overflow-y: auto;
+}
+.mainBody>div{
+    height: 100%;
+}
 .line {
     width: 2px;
     background: linear-gradient(#FFFFFF, #CCCCCC, #CCCCCC, #FFFFFF) repeat scroll 0 0 transparent;
     height: 200px;
     margin: 0px auto;
+}
+
+.charts{
+    width: 95%;
+    height: 95%;
+    max-width: 600px;
+    max-height: 400px;
+}
+html{
+    background: linear-gradient(45deg, #020031 0%, #6D3353 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+}
+body{
+    background: url('images/bs-docs-masthead-pattern.png') repeat center center;
+    height: 100%;
+    min-height: 500px;
+    color: #fff;
+}
+.whiteFont{
+    color: #fff;
+    margin: 0px auto;
+    text-align: center;
+}
+.whiteFont.btn {
+    padding: 19px 24px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff; /* redeclare to override the `.jumbotron a` */
+    border: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.whiteFont .btn:hover {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 5px rgba(0, 0, 0, .25);
+}
+
+.whiteFont .btn:active {
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+.whiteFont h1 {
+    margin: 60px 0 10px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.whiteFont h2 {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.whiteFont p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.whiteFont .marketing-byline {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #999;
+}
+
+.marketing-img {
+    display: block;
+    margin: 0 auto 30px;
+    max-height: 145px;
+}
+.hot-list{
+    text-align: left;
+}
+.question{
+    color:#000;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+.question section{
+    text-align: left;
+}
+.question section h3{
+    text-align: center;
+}
+.question section .q-item{
+    margin: 20px;
+}
+.question section label{
+    margin-left: 10px;
+}
+.navigate{
+    color:#000;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding:5px;
+    left: 5px;
+}
+.navigate .qnav{
+    width:120px;
+}
+.navigate a{
+    display: inline-block;
+    width:5px;
+}
+.navigate .nomargin{
+    margin-bottom: 0px;
+}
+.question-link{
+    width:100%;
+    height: auto;
+}
+.question-link a{
+    width:20%;
+    height: 10px;
 }
