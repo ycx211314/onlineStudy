@@ -28,7 +28,7 @@ public interface IDAO<T,PK extends Serializable> {
 
     public T findByPK(PK pk)throws  Exception;
 
-    public List<T> search(int pageSize,int page,Map<String,Object> map)throws Exception;
+    //public List<T> search(int pageSize,int page,Map<String,Object> map)throws Exception;
 
     public List<T> search(Map<String,Object> map)throws Exception;
 

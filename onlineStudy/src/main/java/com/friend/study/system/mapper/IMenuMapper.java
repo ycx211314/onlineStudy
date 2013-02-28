@@ -38,9 +38,9 @@ public interface IMenuMapper extends IDAO<Menus,Integer> {
     @Override
     Menus findByPK(Integer integer) throws Exception;
 
-    @Override
-    @Select("SELECT * FROM T_MENU WHERE 1=1 limit #{pageSize} offset #{offset}")
-    List<Menus> search(int pageSize, int offset, Map<String, Object> map) throws Exception;
+//    @Override
+//    @Select("SELECT * FROM T_MENU WHERE 1=1 limit #{pageSize} offset #{offset}")
+//    List<Menus> search(int pageSize, int offset, Map<String, Object> map) throws Exception;
 
     @Override
     @Select("SELECT * FROM T_MENU")
